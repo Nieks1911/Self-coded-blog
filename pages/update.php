@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>new</title>
+    <title>update</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body>
@@ -18,7 +18,7 @@ if (isset ($_SESSION['userid'])) {
 ?>
     <div>
         <form class="post_form" action="../database/insertdb.php" method="POST">
-            <h1 class="page_title">New Post</h1>
+            <h1 class="page_title">Update Post</h1>
             <h4 class="td">Date</h4>
             <input id="np_date" name="np_date" type="date">
             <h4 class="tt">Title</h4>

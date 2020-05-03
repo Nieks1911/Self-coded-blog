@@ -2,13 +2,13 @@
 
 include 'dbconnection.php';
 
-if (!isset($_POST['np_submit'])) {
-    header('location: index.php');
+if (!isset($_POST['post_submit'])) {
+    header('location: ../pages/index.php');
 }
 else {
     $date = mysqli_real_escape_string($conn, htmlentities($_POST['np_date']));
-    $title = mysqli_real_escape_string($conn, htmlentities($_POST['np_title']));
-    $content = mysqli_real_escape_string($conn, htmlentities($_POST['np_content']));
+    $title = mysqli_real_escape_string($conn, htmlentities($_POST['post_title']));
+    $content = mysqli_real_escape_string($conn, htmlentities($_POST['post_content']));
     
     $sql = "INSERT INTO posts (date, title, content)
             VALUES (?, ?, ?);";
@@ -25,4 +25,4 @@ else {
     }
 } 
 
-header('Location: index.php');
+header('Location: ../pages/index.php');
