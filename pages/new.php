@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>new</title>
+    <title>Nieks Blog - New Post</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body>
@@ -25,7 +25,7 @@ if (isset ($_SESSION['userid'])) {
             <input class="post_title" name="post_title" type="text" placeholder="Insert post title">
             <h4 class="tc">Content</h4>
             <textarea class="post_textarea" name="post_content" rows="10" cols="50" placeholder="Write something"></textarea>
-            <button class="submit_btn" name="post_submit" type="submit">Submit</button>
+            <button class="submit_btn" name="post_submit" type="submit">Create Post</button>
         </form>
     </div>
 <?php 

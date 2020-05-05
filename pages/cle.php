@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CLE</title>
+    <title>Nieks Blog - CLE</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body>
@@ -39,6 +39,9 @@ $sql = "SELECT * FROM posts ORDER BY id DESC;";
                     <form class="update_form" action="update.php" method="POST">
                     <button class="update_btn" name="update_btn" type="submit">Edit</button>
                         <input name="id" type="hidden" value="<?php echo $row['id'];?>">
+                        <input name="date" type="hidden" value="<?php echo $row['date'];?>">
+                        <input name="title" type="hidden" value="<?php echo $row['title'];?>">
+                        <input name="content" type="hidden" value="<?php echo $row['content'];?>">
                     </form>
                     <?php
                     }

@@ -2,9 +2,12 @@
 
 include 'dbconnection.php';
 
+// Checking if user ended up here by clicking the create post button.
+// If not, user gets sent back to the home page. 
 if (!isset($_POST['post_submit'])) {
     header('location: ../pages/index.php');
 }
+// If user did press the create post button, the code to create a new entry in the database will be executed.
 else {
     $date = mysqli_real_escape_string($conn, htmlentities($_POST['np_date']));
     $title = mysqli_real_escape_string($conn, htmlentities($_POST['post_title']));
